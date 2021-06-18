@@ -1,0 +1,13 @@
+
+Steps to execute the name sorter:
+
+1. Create a file with name as "unsorted-names-list.txt" and add all the names to be sorted. Place this file in the project folder where the name-sorter.exe is found. For .net core 3.1, it is normally under '<solution folder>\name-sorter\bin\Debug\netcoreapp3.1'.
+
+2. Execute the name sorter from command line. Sorted file can be given as a second argument or left blank to use the default name "sorted-names-list.txt".
+
+Examples:
+
+name-sorter ./unsorted-names-list.txt sorted-names-list.txt
+name-sorter ./unsorted-names-list.txt 
+
+3. Output file 'sortednames-list.txt' will be created in the project folder where the name-sorter.exe is found. For .net core 3.1, it is normally under '<solution folder>\name-sorter\bin\Debug\netcoreapp3.1'.
