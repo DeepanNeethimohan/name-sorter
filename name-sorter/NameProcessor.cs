@@ -54,14 +54,12 @@ namespace name_sorter
 
             for (var i = 0; i < names.Length; i++)
             {
+                names[i] = names[i].Trim();
                 splitnames = names[i].Split(" ");
  
-                var reversedName = splitnames[splitnames.Length - 1];
+                var lastName = splitnames[splitnames.Length - 1];
 
-                for(var j = 0; j < splitnames.Length - 1; j++)
-                {
-                    reversedName = reversedName + " " + splitnames[j];
-                }
+                var reversedName = $"{lastName} {names[i].Replace(lastName, string.Empty).Trim()}";
                 allNames.Add(new Names(names[i], reversedName));
             }
         }
