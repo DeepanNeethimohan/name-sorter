@@ -1,0 +1,10 @@
+language: csharp
+mono: none
+dotnet: 3.0.100
+solution: name-sorter.sln
+script:
+  - dotnet restore
+  - dotnet test
+notifications: 
+   email: deepan_sainik@yahoo.com
+...
