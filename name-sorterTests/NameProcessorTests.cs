@@ -69,36 +69,6 @@ namespace name_sorter.Tests
         }
 
         [TestMethod()]
-        public void DisplayNamesTest()
-        {
-            var expected = "Siddhanth Deepan\r\nSindhu Deepan\r\nDeepan Neethimohan";
-            var filename = $"{Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)}/testfile.txt";
-            NameProcessor nameProcessor = new NameProcessor(filename);
-
-            //Read the names
-            String returnvalue = nameProcessor.ReadNamesinFile();
-
-            Assert.AreEqual("", returnvalue);
-
-            if (returnvalue == "")
-            {
-                using (var sw = new StringWriter())
-                {
-                    Console.SetOut(sw);
-                    //Reverse all names
-                    nameProcessor.BringLastnametoFront();
-                    //Sort Ascending
-                    nameProcessor.SortNames(false);
-                    //Display Sorted Names
-                    nameProcessor.DisplayNames();
-
-                    var result = sw.ToString().Trim();
-                    Assert.AreEqual(expected, result);
-                }
-            }
-        }
-
-        [TestMethod()]
         public void SavetoaNewFileTest()
         {
             var expected = "Siddhanth Deepan\r\nSindhu Deepan\r\nDeepan Neethimohan";
