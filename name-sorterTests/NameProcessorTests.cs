@@ -14,7 +14,7 @@ namespace name_sorter.Tests
         [TestMethod()]
         public void ReadNamesinFileTest()
         {
-            var filename = $"{Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)}\\testfile.txt";
+            var filename = $"{Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)}/testfile.txt";
             NameProcessor nameProcessor = new NameProcessor(filename);
 
             //Read the names
@@ -30,7 +30,7 @@ namespace name_sorter.Tests
         [TestMethod()]
         public void BringLastnametoFrontTest()
         {
-            var filename = $"{Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)}\\testfile.txt" ;
+            var filename = $"{Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)}/testfile.txt" ;
             NameProcessor nameProcessor = new NameProcessor(filename);
 
             //Read the names
@@ -50,7 +50,7 @@ namespace name_sorter.Tests
         [TestMethod()]
         public void SortNamesTest()
         {
-            var filename = $"{Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)}\\testfile.txt";
+            var filename = $"{Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)}/testfile.txt";
             NameProcessor nameProcessor = new NameProcessor(filename);
 
             //Read the names
@@ -72,7 +72,7 @@ namespace name_sorter.Tests
         public void DisplayNamesTest()
         {
             var expected = "Siddhanth Deepan\r\nSindhu Deepan\r\nDeepan Neethimohan";
-            var filename = $"{Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)}\\testfile.txt";
+            var filename = $"{Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)}/testfile.txt";
             NameProcessor nameProcessor = new NameProcessor(filename);
 
             //Read the names
@@ -102,8 +102,8 @@ namespace name_sorter.Tests
         public void SavetoaNewFileTest()
         {
             var expected = "Siddhanth Deepan\r\nSindhu Deepan\r\nDeepan Neethimohan";
-            var filename = $"{Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)}\\testfile.txt";
-            var outfile = $"{Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)}\\testoutfile.txt";
+            var filename = $"{Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)}/testfile.txt";
+            var outfile = $"{Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)}/testoutfile.txt";
 
             NameProcessor nameProcessor = new NameProcessor(filename);
 
