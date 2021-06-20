@@ -6,4 +6,14 @@
     <RootNamespace>name_sorter</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="unsorted-names-list.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="unsorted-names-list.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
